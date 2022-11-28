@@ -1,0 +1,357 @@
+<script>
+    // 1
+    // let a=[]
+    // let b=[]
+    // console.log(a==b) 
+    // console.log(a===b)
+
+    // for both console we get false because when we compare two arrays 
+    // then it compare their memory location and two different array does'nt
+    //  have same array
+</script>
+
+<script>
+    // 2
+
+    // let a=[];
+    // let b=a
+    
+    // console.log(a==b)
+    // console.log(a===b)
+    // it give true because both have same memory location
+
+    // 
+</script>
+<script>
+    // 3
+    // let x=[20]
+    // let y=[20]
+    // console.log(x[0]==y[0])
+    // console.log(x[0]===y[0])
+    // true 
+</script>
+<script>
+    // 4
+    // let z=[1,2,3,4]
+    // let a1 = {name:"Raj"}
+    // console.log(...z)
+</script>
+<script>
+    // 5
+    // console.log(typeof NaN)
+
+    // number because NaN is special type of number in js
+</script>
+<script>
+    // 6
+    // let data = 10 - -10
+    // console.log(data)
+    // 20
+</script>
+<script>
+    // 7
+    // const set = new Set([1,1,2,3,4])
+    // console.log(set)
+    // {1,2,3,4}
+</script>
+<script>
+    // 8
+    // let data = {name:"Raj"}
+    // console.log(delete data.name)
+    // true  it tels about delete is happen or not
+
+</script>
+<script>
+    // 9
+    // let data = {name:"Raj"}
+    // console.log(delete data)
+    // false
+    //  it gives false because we cann't delet data ,we can delete proprty
+</script>
+<script>
+    // 10
+    // const data = ["petr", "anuil", "sam"]
+    // const [y] =data
+    // console.log(y)
+
+    // petr
+    // it returns current value like useState
+</script>
+<script>
+    // 11
+    // const data = ["ptr","anil","sam"]
+    // const [,y]=data
+    // console.log(y)
+
+    // anil
+</script>
+<script>
+    // 12
+    // const data = {name:"raj", age:24,skill:"js"}
+    // const {name}=data
+    // console.log(name)
+    
+    // raj
+</script>
+<script>
+    // 13
+    // let data = {name:"raj", age:24,skill:"js"}
+    // let info = {city:"noida",mail:"fdjf@gmail"}
+    // data = {...data, ...info}
+    // console.log(data)
+    // {name: 'raj', age: 24, skill: 'js', city: 'noida', mail: 'fdjf@gmail'}
+
+</script>
+<script>
+    // 14
+    // let data = {name:"raj", age:24,skill:"js"}
+    // let info = {city:"noida",mail:"fdjf@gmail"}
+    // data = {data, ...info}
+    // console.log(data)
+
+    // {data: {name:"raj", age:24,skill:"js"}, city: 'noida', mail: 'fdjf@gmail'}
+</script>
+<script>
+    // 15
+    // let data = {name:"raj", age:24,skill:"js"}
+    // let info = {city:"noida",skill:"node"}
+    // data = {...data, ...info}
+    // console.log(data)
+
+    // {name: 'raj', age: 24, skill: 'node', city: 'noida'}
+</script>
+<script>
+    // 16
+    // const name = "Anuj"
+    // console.log(name())
+
+    // Uncaught TypeError: name is not a function
+    
+</script>
+<script>
+    // 17
+    // const result = false || {} || null
+    // console.log(result)
+
+    // {} because OR operator gives first true value and 
+    // object is also a true value
+</script>
+<script>
+    // 18
+    // const result = null || false || ''
+    // console.log(result)
+
+    // empty string will be print because there is no true value so it print last value
+    
+</script>
+<script>
+    // 19
+    // const result = []|| 0|| true
+    // console.log(result)
+
+    // [] because array is first true value
+</script>
+<script>
+    // 20
+    // console.log(Promise.resolve(5))
+
+    // Promise {<fulfilled>: 5}
+</script>
+<script>
+    // 21
+    // console.log(Promise.reject(5))
+
+    // Uncaught (in promise) 5
+</script>
+<script>
+    // 22
+    // JSON.parse()
+    // Parses JSON to javascript value
+</script>
+<script>
+    // 23
+    // let name = "raj"
+    // function getBame(){
+    //     console.log(name)
+    //     let name = 'ashu'
+    // }
+    // getBame()
+
+    // ncaught ReferenceError: Cannot access 'name' before initialization
+    // let is block level
+</script>
+<script>
+    // 24
+    // let name = "raj"
+    // function getBame(){
+    //     console.log(name)
+    // }
+    // getBame()
+
+    // raj
+</script>
+<script>
+    // 25
+    // console.log(`${(x => x)('I love')} to program`)
+
+    // I love to program
+</script>
+<script>
+    // 26
+
+    // function sumValues(x,y,z) {
+    //     return x+y+z
+    // }
+    // console.log(sumValues(...[1,2,3]))
+
+    // 6
+</script>
+<script>
+    // 27
+    // const name = 'code step by step'
+    // console.log(!typeof name === 'object')
+    // console.log(!typeof name === 'string')
+    // console.log(!typeof name === false)
+
+    // false  because ! makes false and false == anything will be false
+    // false
+    // true(false===false)
+</script>
+<script>
+    // 28
+    // const name = "Subscribe"
+    // const age = 21
+
+    // console.log(isNaN(name))
+    // console.log(isNaN(age))
+
+    // true
+    // false
+</script>
+<script>
+    // // 29
+    // let person = {name:"raj"}
+    // Object.seal(person)
+    // person.name ="Ashu"
+    // person.age=24
+    // console.log(person)
+
+    // name:"Ashu"  , we cannot add any extra key after seal
+    //  but we can update value of persent key
+</script>
+<script>
+    // 30
+    // remove first element without loop
+    // let data = [1,5,8,6,3]
+    // data.shift()
+    // console.log(data)
+</script>
+<script>
+    // 31
+    // remove last element
+    // let data = [1,5,8,6,3]
+    // data.pop()
+    // console.log(data)
+
+</script>
+<script>
+    // 32
+    // check even or odd
+    // let a=30
+    // console.log(a%2)
+</script>
+<script>
+    // 33
+    // let data = {
+    //     name: "raj"
+    // }
+    // delete data.name
+    // console.log(data)
+
+    // {}
+</script>
+<script>
+    // 34
+    // let data ="true"
+// convert data to boolean false value
+// console.log(!data)
+// false
+
+</script>
+<script>
+    // 35
+    // difference between forEach and map function
+    // map always return something but forEach doesn;t return anything
+</script>
+<script>
+    // 36
+    // let data = ["petr", "raj", "fz"]
+    // delete data[1]
+    // console.log(data)
+
+    //  ['petr', empty, 'fz']
+
+</script>
+<script>
+    // 37
+    // merge of two array
+    // let arr1 = [4,85,6,9,96]
+    // let arr2 = [98,52,58,86]
+
+    // let c=[...arr1,...arr2]
+    // console.log(c)
+</script>
+<script>
+    // 38
+    
+</script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
+<script></script>
